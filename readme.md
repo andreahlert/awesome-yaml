@@ -106,7 +106,7 @@ YAML is a human-friendly data serialization language used extensively in configu
 ## Converters and Query Tools
 
 - [yq (mikefarah)](https://github.com/mikefarah/yq) - Portable CLI processor for YAML, JSON, XML, CSV, and TOML files written in Go.
-- [yq (kislyuk)](https://github.com/kislyuk/yq) - jq wrapper for YAML/XML/TOML documents leveraging jq's powerful query syntax.
+- [yq (kislyuk)](https://github.com/kislyuk/yq) - A jq wrapper for YAML/XML/TOML documents leveraging jq's powerful query syntax.
 - [yj](https://github.com/sclevine/yj) - Lightweight CLI converter between YAML, TOML, JSON, and HCL preserving map order.
 - [dasel](https://github.com/TomWright/dasel) - Query and modify YAML, JSON, CSV, TOML, and XML using a uniform selector syntax.
 - [jq](https://github.com/jqlang/jq) - The standard JSON processor, often used in YAML pipelines after conversion to JSON.
@@ -126,12 +126,12 @@ YAML is a human-friendly data serialization language used extensively in configu
 
 ## Security
 
-- [StrictYAML](https://github.com/crdoconnor/strictyaml) - Prevents deserialization attacks by design with no arbitrary object instantiation or code execution.
+- [SafeYAML](https://github.com/dtcooper/python-safe-yaml) - Drop-in replacement for PyYAML that forces safe_load by default to prevent code execution.
 - [Semgrep](https://github.com/semgrep/semgrep) - Static analysis tool with built-in rules to detect unsafe `yaml.load()` and deserialization patterns.
 - [Bandit](https://github.com/PyCQA/bandit) - Python security linter that flags unsafe YAML deserialization calls.
 - [Checkov](https://github.com/bridgecrewio/checkov) - Static analysis for IaC (Terraform, Kubernetes YAML, CloudFormation) catching misconfigurations.
 - [TruffleHog](https://github.com/trufflesecurity/trufflehog) - Scans repos for leaked secrets and credentials in YAML and other config files.
-- [Gitleaks](https://github.com/gitleaks/gitleaks) - Fast secrets scanner for git repos, detects API keys and passwords embedded in YAML.
+- [Gitleaks](https://github.com/gitleaks/gitleaks) - Fast secrets scanner for Git repos, detects API keys and passwords embedded in YAML.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) - Prevents secrets from entering codebases with YAML allowlisting support.
 
 ## Formatters
@@ -145,8 +145,8 @@ YAML is a human-friendly data serialization language used extensively in configu
 ## Diff and Merge
 
 - [dyff](https://github.com/homeport/dyff) - Structure-aware YAML/JSON diff tool with colored, human-friendly output and kubectl integration.
+- [kdiff3](https://kdiff3.sourceforge.net/) - General-purpose three-way diff and merge tool that works well with YAML side-by-side comparison.
 - [yamldiff](https://github.com/sahilm/yamldiff) - Simple CLI tool to semantically diff two YAML files.
-- [spruce](https://github.com/geofffranks/spruce) - YAML merge tool with operators for deep merging, used in BOSH and Cloud Foundry workflows.
 
 ## Specifications and Learning
 
